@@ -9,7 +9,11 @@ html, body {
     box-sizing: inherit;
 }
 
-li::marker {
-    font-size: 2rem;
-    color: blue;
+li {
+    background-color: yellow;
+}
+
+.change {
+    background-color: black;
+    color: lightgray;
 }

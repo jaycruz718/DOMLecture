@@ -16,5 +16,45 @@ let firstQuery = document.querySelector('.subTitle');
 let listItem = document.getElementsByTagName("li");
 
 for (let el of listItems) {
-    console.log(el)
+    // console.log(el)
 }
+
+// Query Selector All 
+let pars = document.querySelectorAll('p');
+ 
+// console.log(pars);
+
+let list = document.getElementsByTagName('ul');
+// console.log(list[0].childNodes[3]);
+
+let newListItem = document.createElement('li');
+let newTitle = document.createElement('h1');
+// console.log(newListItem);
+
+list[0].appendChild(newListItem)
+
+// let body = document.getElementsByName('Name');
+
+// list[0].insertBefore(newListItem, list[0].childNodes[4]);
+
+// list[0].removeChild(list[0].firstChild);
+
+let body = document.getElementsByName('body');
+ 
+// console.log(body[0].childNodes[1]);
+
+body[0].removeChild(body[0].childNodes[1])
+
+newListItem.style.backgroundColor = 'green';
+newListItem.style.color ='white';
+
+if(body[0].childNodes[1].hasAttribute('name')) {
+    console.log('Attribute Exists');
+
+} else {
+    console.log('no attribute found');
+}
+
+// body[0].removeChild(body[0].childNodes[1])
+
+// body[0].classList.tuggle('change')
